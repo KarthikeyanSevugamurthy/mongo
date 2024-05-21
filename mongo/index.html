@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firebase store</title>
+    <script defer type="module" src="index.js"></script>
+</head>
+<body>
+    <h2>Add College Student</h2>
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="rollno">Roll No:</label><br>
+    <input type="text" id="rollno" name="rollno" required><br>
+    <label for="college">College Name:</label><br>
+    <input type="text" id="college" name="college" required><br>
+    <label for="branch">Branch:</label><br>
+    <input type="text" id="branch" name="branch" required><br>
+    <label for="year">Year:</label><br>
+    <select id="year" name="year" required>
+        <option value="">Select Year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+    </select><br><br>
+    <input type="submit" value=" Add Student" id="submit" required>
+    <h4>Read  Student data</h4>
+    <table id="studentTable" border="2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Roll No</th>
+                <th>College</th>
+                <th>Branch</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            
+        </tbody>
+    </table>
+    <button id="submit4">Fetch Students</button>
+
+    <h4>Update  Student data</h4>
+    <label for="rollno">Roll No:</label><br>
+    <input type="text" id="rollno1" name="rollno" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email1" name="email" required><br>
+    <input type="submit" value=" update Student" id="submit3" required><br>
+    <h4>Specfic Student data</h4>
+    <label for="rollno">Roll No:</label><br>
+    <input type="text" id="rollno2" name="rollno" required><br>
+    <input type="submit" value=" search" id="submit5" required><br>
+    <p id="para"></p>
+    <h4>delete Student data</h4>
+    <label for="rollno">Roll No:</label><br>
+    <input type="text" id="rollno3" name="rollno" required><br>
+    <input type="submit" value=" search" id="submit6" required><br>
+    
+
+
+</body>
+
+</html>
